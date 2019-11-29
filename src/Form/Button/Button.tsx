@@ -1,11 +1,11 @@
-import React, { FunctionComponent } from "react";
+import * as React from "react";
 
 type ButtonProps = {
   text: string;
-  primary: boolean;
+  primary?: boolean;
 };
 
-export const Button: FunctionComponent<ButtonProps> = ({
+export const Button: React.FunctionComponent<ButtonProps> = ({
   primary = false,
   text
 }) => (
