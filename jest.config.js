@@ -1,6 +1,7 @@
 module.exports = {
   roots: ["<rootDir>/src"],
   transform: {
+    "^.+\\.jsx?$": "<rootDir>/node_modules/babel-jest",
     ".(jsx?|tsx?)": "ts-jest"
   },
   testPathIgnorePatterns: [
